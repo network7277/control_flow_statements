@@ -8,12 +8,11 @@
         a: a increased by 1 if positive, else unchanged.
  */
  int func( int number ){
-    
     if ( number > 0 ){
         return number + 1;
     }
 
-    if ( number <= 0) {
+    else {
         return number;
     }
  }
