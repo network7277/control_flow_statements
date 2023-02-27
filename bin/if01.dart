@@ -8,15 +8,15 @@
         a: a increased by 1 if positive, else unchanged.
  */
  int func( int a ){
+   int s = a;
+
    if ( a > 0 ){
-    return a + 1;
+    return s = a + 1;
+   }
+    return s;
+    return s;
    }
 
-  
-   return a;
-   
- }
-
 void main() {
-    print(func(5));
+    print(func(-6));
 }
