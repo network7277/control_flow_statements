@@ -13,4 +13,31 @@
     Returns:
         string: the message to return*/
 
-void main() {}
+String func( int T ){
+    String s = " ";
+
+    if ( T < 0 ){
+        s = 'Freezing';
+    }
+
+    if ( T >=1 && T <= 10 ){
+        s = 'Very Cold';
+    }
+
+    if ( T >= 21 && T <= 30 ){
+        s = 'Normal';
+    }
+
+    if ( T >= 31 && T <= 40 ){
+        s = 'Hot';                         
+    }
+
+    if ( T > 40 ){
+        s = 'Very Hot';
+    }
+    return s;
+}
+
+void main() {
+    print(func(50));
+}
