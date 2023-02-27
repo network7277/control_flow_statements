@@ -11,4 +11,24 @@
         c: third number
     Returns:
         string: string with the result*/
-void main() {}
+
+String func( int a, int b, int c ){
+
+    String s1 =  "there are a lot of positive numbers";
+    String s2 = "there are a lot of negative numbers";
+
+    if ((a > 0 && b > 0) || (a > 0 && c > 0) || (b > 0 && c > 0)){
+    return  s1;
+    }
+
+    if ((a < 0 && b < 0) || (a < 0 && c < 0) || (b < 0 && c < 0)){
+    return s2;
+    }
+
+    return s1;
+    return s2;
+}
+
+void main() {
+    print(func(2, -5, 6));
+}
